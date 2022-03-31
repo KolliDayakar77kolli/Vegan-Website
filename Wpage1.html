@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/1.html">
+    <script src="https://kit.fontawesome.com/9329adc263.js" crossorigin="anonymous"></script>
+    <style>
+        
+        body{
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        #topbar{
+            width: 100%;
+            height:77px;
+            position: fixed;
+            top: 0;
+            left:0;
+            box-shadow:0 5px 5px #ccc;
+            padding: 0 28px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            background-color: white;
+            align-items: center;
+        }
+        #logo{
+            height:40px;
+            width:40px;
+            border-radius: 80px;
+        }
+        .menu-text{
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            margin-right: 24px;
+        }
+        .menu-text>i{
+            margin-left: 4px;
+        }
+        .btn{
+            background-color: rgb(170, 210, 54);
+            border:0;
+            font-size: 12px;
+            font-weight: 600;
+            padding:9px 34px;
+            color:white;
+            text-transform: uppercase;
+            border-radius:4px;
+            outline: none;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: white;
+            color:rgb(170, 210, 54);
+            border:1px solid rgb(170, 210, 54) ;
+        }
+        #landing-section{
+            width: 100%;
+            height:100vh;
+            background-image: url(./img/coverpic.jpeg);
+            background-size: cover;
+            background-position: top left;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column; 
+            padding 0 16%;
+            box-sizing: border-box;           
+          
+        }
+        #landing-section>h1{
+            color:black;
+            width:850px;
+            font-size: 44px;
+            font-weight: 600;
+            letter-spacing: 8.8px;
+            line-height: 1.2;
+            text-align: center;
+            margin:0;
+            }
+        #landing-section>p{
+            font-size: 14px;
+            padding-top: 32px;
+            word-wrap: wrap;
+            color:#8b8b99;
+            margin: 0;
+            letter-spacing: 0.5px;
+            text-align: center;
+        }
+        #steps-section{
+            display: flex;
+            color: white;
+            
+        }
+        .steps-item > i{
+            font-size: 96px;
+        }
+
+
+        .steps-item{
+            padding: 112px 48px;
+            text-align: center;
+            width: 25%;
+            transition: transform 0.3s;
+            box-sizing: border-box;
+        }
+        
+
+        .steps-item:hover>i{
+            font-size: 110px;
+            transform: scale(1.1, 1.1);
+        }
+
+
+        #first-step{
+            background-color: #5acda6;
+        }
+        #second-step{
+            background-color: #91ac41;
+        }
+        #third-step{
+            background-color: #e4b476;
+        }
+        #fourth-step{
+            background-color: #f69dad;
+        }
+        
+
+
+
+
+
+
+        @media (max-width: 600px) {
+            #topbar{
+                
+            }
+            .menu-text{
+                display: none;
+            }
+            
+            #landing-section > h1{
+                font-size: 28px;
+            }
+            #steps-section{
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .step-item{
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #topbar{
+                
+            }
+            .menu-text{
+                display: none;
+            }
+            
+            #landing-section > h1{
+                font-size: 28px;
+            }
+            #steps-section{
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .step-item{
+                width: 50%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #topbar{
+                
+            }
+            .menu-text{
+                display: none;
+            }
+            
+            #landing-section > h1{
+                font-size: 28px;
+            }
+            #steps-section{
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+            .step-item{
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+    <nav id="topbar">
+        <img id="logo" src="./img/lion2.jpg" alt="lion-logo"/>
+
+        <div>
+            <a class="menu-text">Demo Pages<i class="fas fa-caret-down"></i></a>
+            <a class="menu-text">Watch Videos</a>
+            <a class="menu-text">Blocks<i class="fas fa-caret-down"></i></a>
+            <button class="btn">Buy Now</button>
+        </div>
+    </nav>
+    <section id="landing-section">
+        <h1>This is my Simple Website Template</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam illum est accusantium sit, hic possimus laborum maiores voluptates nobis quia ea, id magni quod esse? Eligendi sequi cum quia dolorum. lore</p>
+    </section>
+    </header>
+    <main>
+        <section id="steps-section">
+            <div id="first-step" class="steps-item">
+                <i class="fas fa-cut"></i>
+                <h3>Step 01.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod optio necessitatibus eius ut voluptatum, enim aperiam id dolore qui quae magnam officia. Molestias, nostrum. Nostrum vel a deleniti fugit!</p>
+            </div>
+            <div id="second-step" class="steps-item">
+                <i class="fas fa-cut"></i>
+                <h3>Step 01.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod optio necessitatibus eius ut voluptatum, enim aperiam id dolore qui quae magnam officia. Molestias, nostrum. Nostrum vel a deleniti fugit!</p>
+            </div>
+            <div id="third-step" class="steps-item">
+                <i class="fas fa-cut"></i>
+                <h3>Step 01.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod optio necessitatibus eius ut voluptatum, enim aperiam id dolore qui quae magnam officia. Molestias, nostrum. Nostrum vel a deleniti fugit!</p>
+            </div>
+            <div id="fourth-step" class="steps-item">
+                <i class="fas fa-cut"></i>
+                <h3>Step 01.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quod optio necessitatibus eius ut voluptatum, enim aperiam id dolore qui quae magnam officia. Molestias, nostrum. Nostrum vel a deleniti fugit!</p>
+            </div>  
+        </section>
+    </main>
+</body>
+</html>
